@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1"> <!-- Sets the character encoding for the document -->
+    <title>REGISTRATION SUCCESSFUL</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="/style.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body>
+<header>
+    <h1>Welcome to our Security Project</h1> <!-- Main heading of the page -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li> <!-- Navigation link to the home page -->
+            <li><a href="/login">Login</a></li> <!-- Navigation link to the login page -->
+            <li><a href="/register">Registration</a></li> <!-- Navigation link to the registration page -->
+            <li><a href="/userManager">Manage users</a></li> <!-- Corrected URL to the user management page -->
+            <li><a href="/admin">Admin</a></li> <!-- Navigation link to the admin page -->
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>User Created Successfully</h2> <!-- Subheading indicating successful registration -->
+    <p>User Name: <span th:text="${userName}"></span></p> <!-- Displays the username of the newly registered user -->
+</main>
+<footer>
+    <p>&copy; 2024 Matteus, Siyar, and George. All rights reserved.</p> <!-- Footer content with copyright information -->
+</footer>
+</body>
+</html>

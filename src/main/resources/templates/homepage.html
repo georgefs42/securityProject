@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1"> <!-- Sets the character encoding for the document -->
+    <title>HOMEPAGE</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="/style.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body>
+<header>
+    <h1>Welcome to our Security Project</h1> <!-- Main heading of the page -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li> <!-- Navigation link to the home page -->
+            <li><a href="/login">Login</a></li> <!-- Navigation link to the login page -->
+            <li><a href="/register">Registration</a></li> <!-- Navigation link to the registration page -->
+            <li><a href="/userManager">Manage users</a></li> <!-- Navigation link to the user management page (fixed typo) -->
+            <li><a href="/admin">Admin</a></li> <!-- Navigation link to the admin page -->
+            <li>
+                <!-- Logout form -->
+                <form th:action="@{/performLogout}" method="post" style="display:inline;">
+                    <!-- CSRF token for security -->
+                    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+                    <input type="submit" value="Logout" /> <!-- Logout button -->
+                </form>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <p>This is the HOMEPAGE.</p> <!-- Main content of the page -->
+</main>
+<footer>
+    <p>&copy; 2024 Matteus, Siyar and George. All rights reserved.</p> <!-- Footer content with copyright information -->
+</footer>
+</body>
+</html>

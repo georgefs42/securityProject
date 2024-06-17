@@ -1,0 +1,61 @@
+/* Styles for the navigation */
+nav {
+    background-color: darkslateblue; /* Sets the background color of the navigation bar */
+    overflow: hidden; /* Ensures content inside the nav doesn't overflow */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+nav ul li {
+    float: left; /* Aligns list items horizontally */
+}
+
+nav ul li a {
+    display: block; /* Makes the anchor tag a block element */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text */
+    padding: 14px 20px; /* Adds padding to the anchor tag */
+    text-decoration: none; /* Removes underline from the text */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Changes background color on hover */
+}
+
+nav ul li.active a {
+    background-color: #4CAF50; /* Changes background color for the active link */
+}
+
+nav ul {
+    display: flex; /* Uses flexbox layout for the list */
+    justify-content: center; /* Centers the list items horizontally */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adds horizontal margin between list items */
+}
+
+/* Styles for the footer */
+footer {
+    background-color: darkslateblue; /* Sets the background color of the footer */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text */
+    padding: 10px; /* Adds padding to the footer */
+    position: fixed; /* Fixes the footer at the bottom of the page */
+    bottom: 0; /* Positions the footer at the bottom */
+    width: 100%; /* Sets the width of the footer to 100% */
+}
+
+footer p {
+    margin: 0; /* Removes default margin from paragraph */
+}
+
+/* Additional styles */
+.error {
+    color: red; /* Sets the text color to red */
+    font-style: italic; /* Makes the text italic */
+}

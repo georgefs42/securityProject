@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <title>REGISTER PAGE</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="/style.css"> <!-- Links the external CSS file for styling -->
+    <style>
+        /* Add any additional CSS styles here */
+        body {
+            font-family: Arial, sans-serif; /* Sets the font for the body */
+        }
+        header {
+            background-color: #f0f0f0; /* Sets background color for the header */
+            padding: 10px; /* Adds padding to the header */
+            text-align: center; /* Centers the text in the header */
+        }
+        nav ul {
+            list-style-type: none; /* Removes bullet points from the list */
+            padding: 0; /* Removes default padding */
+        }
+        nav ul li {
+            display: inline; /* Displays list items inline */
+            margin-right: 10px; /* Adds margin to the right of each list item */
+        }
+        footer {
+            text-align: center; /* Centers the text in the footer */
+            margin-top: 20px; /* Adds margin to the top of the footer */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to our Security Project</h1> <!-- Main heading of the page -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li> <!-- Navigation link to the home page -->
+            <li><a href="/login">Login</a></li> <!-- Navigation link to the login page -->
+            <li><a href="/register">Registration</a></li> <!-- Navigation link to the registration page -->
+            <li><a href="/userManager">Manage users</a></li> <!-- Corrected URL to the user management page -->
+            <li><a href="/admin">Admin</a></li> <!-- Navigation link to the admin page -->
+        </ul>
+    </nav>
+</header>
+<div align="center">
+    <h1>User Registration</h1> <!-- Subheading for the registration section -->
+    <form action="#" th:action="@{/register}" method="post" th:object="${user}">
+        <!-- CSRF token for security -->
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+
+        <!-- Name input field -->
+        <label>Name:</label>
+        <input type="text" th:field="*{name}" />
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="error"></span><br/>
+
+        <!-- Email input field -->
+        <label>E-mail:</label>
+        <input type="text" th:field="*{email}" />
+        <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error"></span><br/>
+
+        <!-- Password input field -->
+        <label>Password:</label>
+        <input type="password" th:field="*{password}" />
+        <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="error"></span><br/>
+
+        <!-- Submit button -->
+        <button type="submit">Register</button>
+    </form>
+</div>
+<footer>
+    <p>&copy; 2024 Matteus, Siyar, and George. All rights reserved.</p> <!-- Footer content with copyright information -->
+</footer>
+</body>
+</html>

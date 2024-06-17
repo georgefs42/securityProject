@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1"> <!-- Sets the character encoding for the document -->
+    <title>User MANAGER</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="/style.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body>
+<header>
+    <h1>Welcome to our Security Project</h1> <!-- Main heading of the page -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li> <!-- Navigation link to the home page -->
+            <li><a href="/login">Login</a></li> <!-- Navigation link to the login page -->
+            <li><a href="/register">Registration</a></li> <!-- Navigation link to the registration page -->
+            <li><a href="/userManager">Manage users</a></li> <!-- Corrected URL to the user management page -->
+            <li><a href="/admin">Admin</a></li> <!-- Navigation link to the admin page -->
+        </ul>
+    </nav>
+</header>
+<table>
+    <thead>
+    <tr>
+        <th>Username</th> <!-- Column header for username -->
+        <th>Email</th> <!-- Column header for email -->
+        <th>Roles</th> <!-- Column header for roles -->
+        <th>Actions</th> <!-- Column header for actions -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user, status : ${users}">
+        <!-- Iterates over each user in the 'users' list -->
+        <td th:text="${user.username}"></td> <!-- Displays the username -->
+        <td th:text="${userEmails[status.index]}"></td> <!-- Displays the user's email (masked) -->
+        <td th:text="${user.authorities}"></td> <!-- Displays the user's roles -->
+        <td>
+            <div class="action-container">
+                <!-- Form for deleting a user -->
+                <form th:action="@{/userManager/delete}" method="post"> <!-- Corrected action URL -->
+                    <input type="hidden" name="username" th:value="${user.username}" />
+                    <label for="emailInput">Enter Email:</label>
+                    <input type="email" id="emailInput" name="email" required />
+                    <button type="submit">Delete</button>
+                </form>
+                <div th:if="${errorUsername == user.username}" class="error-message">
+                    <!-- Displays error message if the email entered is invalid for the username -->
+                    <p>Invalid email</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<footer>
+    <p>&copy; 2024 Matteus, Siyar, and George. All rights reserved.</p> <!-- Footer content with copyright information -->
+</footer>
+</body>
+</html>
