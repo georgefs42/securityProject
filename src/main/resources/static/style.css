@@ -59,3 +59,24 @@ footer p {
     color: red; /* Sets the text color to red */
     font-style: italic; /* Makes the text italic */
 }
+
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the body */
+}
+header {
+    background-color: #f0f0f0; /* Sets background color for the header */
+    padding: 10px; /* Adds padding to the header */
+    text-align: center; /* Centers the text in the header */
+}
+nav ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+}
+nav ul li {
+    display: inline; /* Displays list items inline */
+    margin-right: 10px; /* Adds margin to the right of each list item */
+}
+footer {
+    text-align: center; /* Centers the text in the footer */
+    margin-top: 20px; /* Adds margin to the top of the footer */
+}
