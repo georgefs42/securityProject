@@ -1,5 +1,7 @@
 package com.george.securityproject.configuration;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -16,64 +18,66 @@ import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 @Configuration
 public class SecurityConfiguration {
 
-    // Configures the security filter chain for HTTP security
+    private static final Logger logger = LoggerFactory.getLogger(SecurityConfiguration.class);
+
     @Bean
     public SecurityFilterChain securityChain(HttpSecurity http) throws Exception {
+        logger.debug("Security Chain with HttpSecurity started");
         http
-                // Authorize HTTP requests based on roles
                 .authorizeHttpRequests(
                         authorizeRequests -> authorizeRequests
-                                .requestMatchers("/register", "/admin", "/userManager").hasRole("ADMIN") // Allow only ADMIN role to access specified paths
-                                .anyRequest().authenticated()) // All other requests need to be authenticated
-                // Configure form login
-                .formLogin(formLogin ->
-                        formLogin
-                                .defaultSuccessUrl("/", true) // Redirect to home on successful login
-                                .failureUrl("/login?error=true") // Redirect to login page with error on failure
-                                .permitAll() // Allow everyone to access the login page
-                )
-                // Configure logout
-                .logout(logout ->
-                        logout
-                                .logoutUrl("/performLogout") // URL to trigger logout
-                                .logoutSuccessUrl("/login") // Redirect to login page on successful logout
-                                .permitAll() // Allow everyone to access the logout URL
-                )
-                // Configure CSRF protection with cookies
-                .csrf(csrf ->
-                        csrf.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
-                );
-        return http.build(); // Build the security filter chain
+                                .requestMatchers("/register", "/admin", "/userManager").hasRole("ADMIN")
+                                .anyRequest().authenticated())
+                .formLogin(formLogin ->{
+                    formLogin
+                            .defaultSuccessUrl("/", true)
+                            .successHandler((request, response, authentication) -> {
+                                String username = request.getParameter("username");
+                                logger.warn("Login succeeded with for user : {}", username);
+                                response.sendRedirect("/");
+                            })
+                            .failureUrl("/login?error=true")
+                            .failureHandler((request,response,exception)->{
+                                String username = request.getParameter("username");
+                                logger.warn("Login failed with attempted User name: {}", username);
+                                response.sendRedirect("/login?error=true");
+                            })
+                            .permitAll();
+                })
+                .logout(logout ->{
+                    logout
+                            .logoutUrl("/performLogout")
+                            .logoutSuccessUrl("/login")
+                            .permitAll();
+                })
+                .csrf(csrf ->{
+                    logger.debug("CSRF protection configuration deployed");
+                    csrf.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+                });
+        return http.build();
     }
 
-    // Configures the in-memory user details service with predefined users
     @Bean
     public UserDetailsService userDetailsService() {
+        logger.debug("Default users created");
         InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
-
-        // Create a user with USER role
         var user = User.builder()
                 .username("user")
-                .password(passwordEncoder().encode("password")) // Encode the password
+                .password(passwordEncoder().encode("password"))
                 .roles("USER")
                 .build();
-
-        // Create an admin with ADMIN role
         var admin = User.builder()
                 .username("admin")
-                .password(passwordEncoder().encode("password")) // Encode the password
+                .password(passwordEncoder().encode("password"))
                 .roles("ADMIN")
                 .build();
-
-        // Add users to the in-memory user details manager
         userDetailsManager.createUser(user);
         userDetailsManager.createUser(admin);
-        return userDetailsManager; // Return the in-memory user details manager
+        return userDetailsManager;
     }
 
-    // Configures the password encoder to use BCrypt
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder(); // Return BCrypt password encoder
+        return new BCryptPasswordEncoder();
     }
 }

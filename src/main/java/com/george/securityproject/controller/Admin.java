@@ -11,6 +11,7 @@ public class Admin {
     // Handler method for HTTP GET requests to "/admin"
     @GetMapping
     public String adminPage(){
+
         return "admin"; // Returns the view name "admin" (admin.html or admin.jsp)
     }
 

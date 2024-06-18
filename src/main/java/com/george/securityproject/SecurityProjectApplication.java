@@ -1,4 +1,4 @@
-package com.george.securityproject.services;
+package com.george.securityproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

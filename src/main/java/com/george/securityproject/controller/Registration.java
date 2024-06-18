@@ -1,7 +1,11 @@
 package com.george.securityproject.controller;
 
 import com.george.securityproject.model.UserApp;
+import com.george.securityproject.services.Html;
+import com.george.securityproject.services.Masking;
 import jakarta.validation.Valid;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -23,59 +27,58 @@ import java.util.Map;
 @RequestMapping("/register")
 public class Registration {
 
+    private final static Logger logger = LoggerFactory.getLogger(Registration.class);
     private final PasswordEncoder passwordEncoder;
     private final UserDetailsService userDetailsService;
     private final Map<String, String> userEmails = new HashMap<>();
+    private final Html html;
 
-    // Constructor injection for PasswordEncoder and UserDetailsService
     @Autowired
-    public Registration(PasswordEncoder passwordEncoder, UserDetailsService userDetailsService) {
+    public Registration(Html html, PasswordEncoder passwordEncoder, UserDetailsService userDetailsService, Masking masking) {
         this.passwordEncoder = passwordEncoder;
         this.userDetailsService = userDetailsService;
+        this.html = html;
     }
 
-    // Handles GET requests to "/register", returns the registration form view
+    public Registration(PasswordEncoder passwordEncoder, UserDetailsService userDetailsService, Html html) {
+        this.passwordEncoder = passwordEncoder;
+        this.userDetailsService = userDetailsService;
+        this.html = html;
+    }
+
     @GetMapping
     public String registrationForm(Model model){
-        model.addAttribute("user", new UserApp()); // Add a new UserApp object to the model
-        return "register"; // Return the "register" view
+        logger.debug("Access of registration form");
+        model.addAttribute("user", new UserApp());
+        return "register";
     }
 
-    // Handles POST requests to "/register", processes the registration form
     @PostMapping
-    public String registerUser(@Valid @ModelAttribute("user") UserApp appUser, BindingResult bindingResult, Model model){
-        // Check if there are any validation errors in the form
+    public String registerUser(@Valid @ModelAttribute("user") UserApp appUser,BindingResult bindingResult, Model model){
         if(bindingResult.hasErrors()){
             model.addAttribute("error", "There are errors in the form, please correct them");
-            System.out.println(appUser); // Debugging: Print the user details to the console
-            return "register"; // Return the "register" view to correct errors
+            logger.debug("Form has validation errors for attempted registration of user: {}", appUser.getName());
+            System.out.println(appUser);
+            return "register";
         }
-
-        // Encode the user's password
+        logger.debug("Registration for user with email {}", Masking.maskEmail(appUser.getEmail()) + " done");
         String encodedPassword = passwordEncoder.encode(appUser.getPassword());
         appUser.setPassword(encodedPassword);
-
-        // Create a new UserDetails object with the encoded password and USER role
         UserDetails newUser = User.withUsername(appUser.getName())
                 .password(appUser.getPassword())
                 .roles("USER")
                 .build();
-
-        // Add the new user to the in-memory user details manager
         ((InMemoryUserDetailsManager) userDetailsService).createUser(newUser);
 
-        // Store the user's email in the userEmails map
-        userEmails.put(appUser.getName(), appUser.getEmail());
+        userEmails.put(appUser.getName(), html.escapeHtml(appUser.getEmail()));
 
-        // Add attributes to the model to pass to the view
         model.addAttribute("user", appUser);
         model.addAttribute("userName", appUser.getName());
 
-        // Return the "regSuccessful" view on successful registration
         return "registerSuccessful";
+
     }
 
-    // Getter for the userEmails map
     public Map<String, String> getUserEmails() {
         return userEmails;
     }

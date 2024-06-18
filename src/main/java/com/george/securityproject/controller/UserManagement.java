@@ -73,7 +73,7 @@ public class UserManagement {
             model.addAttribute("errorUsername", errorUsername);
         }
 
-        // Return the "manageuser" view
+        // Return the "userManger" view
         return "userManger";
     }
 
@@ -84,14 +84,16 @@ public class UserManagement {
         Map<String, String> userEmails = registration.getUserEmails();
         String registeredEmail = userEmails.get(username);
 
-        // Check if the provided email matches the registered email
         if (!registeredEmail.equals(email)) {
             model.addAttribute("errorUsername", username);
-            return "redirect:/userManager?errorUsername=" + username;
+            return "redirect:/userManger?errorUsername=" + username;
         }
 
-        // Delete the user if email matches
         userDetailsManager.deleteUser(username);
-        return "redirect:/userManager";
+        return "deletedUserSuccessful";
     }
-}
+
+    @GetMapping("/deletedUserSuccessful")
+    public String deletedUserSuccessful(){
+        return "deletedUserSuccessful";
+    }}

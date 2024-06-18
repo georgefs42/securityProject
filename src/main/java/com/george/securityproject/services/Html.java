@@ -1,28 +1,19 @@
 package com.george.securityproject.services;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.util.HtmlUtils;
 
 @Component
 public class Html {
 
-    // Masks the email address for privacy
-    public String maskEmail(String email) {
-        if (email == null) {
-            return null; // Return null if the email is null
+    public String escapeHtml(String input){
+        if (input == null) {
+            return null;
         }
-        int atIndex = email.indexOf('@'); // Find the index of '@' in the email
-        if (atIndex > 0) {
-            // Mask the part of the email before '@'
-            String maskedPart = repeatMasking(atIndex);
-            String domainPart = email.substring(atIndex); // Get the domain part of the email
-            return maskedPart + domainPart; // Return the masked email
-        } else {
-            return email; // Return the email as is if '@' is not found
-        }
+        return HtmlUtils.htmlEscape(input);
     }
 
-    // Helper method to create a string of asterisks (*) of given length
-    private String repeatMasking(int count) {
-        return new String(new char[count]).replace("\0", "*"); // Create a string of asterisks
+    public String maskEmail(String email) {
+        return email;
     }
 }
