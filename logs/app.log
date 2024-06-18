@@ -1,0 +1,117 @@
+2024-06-18 18:43:37 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-18 18:43:37 - Starting SecurityProjectApplication using Java 22.0.1 with PID 1244 (C:\Users\georg\IdeaProjects\securityProject1\target\classes started by georg in C:\Users\georg\IdeaProjects\securityProject1)
+2024-06-18 18:43:37 - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 18:43:39 - Tomcat initialized with port 8080 (http)
+2024-06-18 18:43:39 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-18 18:43:39 - Starting service [Tomcat]
+2024-06-18 18:43:39 - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 18:43:39 - Initializing Spring embedded WebApplicationContext
+2024-06-18 18:43:39 - Root WebApplicationContext: initialization completed in 2001 ms
+2024-06-18 18:43:39 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-18 18:43:40 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4262fdeb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f0a2638, org.springframework.security.web.context.SecurityContextHolderFilter@4f116ca2, org.springframework.security.web.header.HeaderWriterFilter@19489b27, org.springframework.web.filter.CorsFilter@5382184b, org.springframework.security.web.csrf.CsrfFilter@68ef01a5, org.springframework.security.web.authentication.logout.LogoutFilter@59838256, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c770db4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5809fa26, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77cb452c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@193bb809, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20801cbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2213639b, org.springframework.security.web.access.ExceptionTranslationFilter@4d705112, org.springframework.security.web.access.intercept.AuthorizationFilter@411cd156]
+2024-06-18 18:43:40 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-18 18:43:40 - Tomcat started on port 8080 (http) with context path '/'
+2024-06-18 18:43:40 - Started SecurityProjectApplication in 3.747 seconds (process running for 5.05)
+2024-06-18 18:43:47 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-18 18:43:47 - Starting SecurityProjectApplication using Java 22.0.1 with PID 8552 (C:\Users\georg\IdeaProjects\securityProject1\target\classes started by georg in C:\Users\georg\IdeaProjects\securityProject1)
+2024-06-18 18:43:47 - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 18:43:48 - Tomcat initialized with port 8080 (http)
+2024-06-18 18:43:48 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-18 18:43:48 - Starting service [Tomcat]
+2024-06-18 18:43:48 - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 18:43:48 - Initializing Spring embedded WebApplicationContext
+2024-06-18 18:43:48 - Root WebApplicationContext: initialization completed in 1379 ms
+2024-06-18 18:43:49 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-18 18:43:49 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4262fdeb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f0a2638, org.springframework.security.web.context.SecurityContextHolderFilter@4f116ca2, org.springframework.security.web.header.HeaderWriterFilter@19489b27, org.springframework.web.filter.CorsFilter@5382184b, org.springframework.security.web.csrf.CsrfFilter@68ef01a5, org.springframework.security.web.authentication.logout.LogoutFilter@59838256, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c770db4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5809fa26, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77cb452c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@193bb809, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20801cbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2213639b, org.springframework.security.web.access.ExceptionTranslationFilter@4d705112, org.springframework.security.web.access.intercept.AuthorizationFilter@411cd156]
+2024-06-18 18:43:49 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-18 18:43:49 - Tomcat started on port 8080 (http) with context path '/'
+2024-06-18 18:43:49 - Started SecurityProjectApplication in 2.988 seconds (process running for 3.998)
+2024-06-18 18:43:49 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-18 18:43:49 - Starting SecurityProjectApplication using Java 22.0.1 with PID 6476 (C:\Users\georg\IdeaProjects\securityProject1\target\classes started by georg in C:\Users\georg\IdeaProjects\securityProject1)
+2024-06-18 18:43:49 - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 18:43:51 - Tomcat initialized with port 8080 (http)
+2024-06-18 18:43:51 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-18 18:43:51 - Starting service [Tomcat]
+2024-06-18 18:43:51 - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 18:43:51 - Initializing Spring embedded WebApplicationContext
+2024-06-18 18:43:51 - Root WebApplicationContext: initialization completed in 1063 ms
+2024-06-18 18:43:51 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-18 18:43:51 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62a54948, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6048e26a, org.springframework.security.web.context.SecurityContextHolderFilter@3e546734, org.springframework.security.web.header.HeaderWriterFilter@7e8279e5, org.springframework.web.filter.CorsFilter@50b93353, org.springframework.security.web.csrf.CsrfFilter@13ed066e, org.springframework.security.web.authentication.logout.LogoutFilter@3e046e39, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c719bd4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@59838256, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@44286963, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64b0d1fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12d2ddde, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c8f97a7, org.springframework.security.web.access.ExceptionTranslationFilter@23468512, org.springframework.security.web.access.intercept.AuthorizationFilter@317890ea]
+2024-06-18 18:43:51 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-18 18:43:51 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-06-18 18:43:51 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-18 18:43:51 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-06-18 18:44:10 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-18 18:44:10 - Starting SecurityProjectApplication using Java 22.0.1 with PID 9368 (C:\Users\georg\IdeaProjects\securityProject1\target\classes started by georg in C:\Users\georg\IdeaProjects\securityProject1)
+2024-06-18 18:44:10 - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 18:44:11 - Tomcat initialized with port 8080 (http)
+2024-06-18 18:44:11 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-18 18:44:11 - Starting service [Tomcat]
+2024-06-18 18:44:11 - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 18:44:11 - Initializing Spring embedded WebApplicationContext
+2024-06-18 18:44:11 - Root WebApplicationContext: initialization completed in 977 ms
+2024-06-18 18:44:11 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-18 18:44:11 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42ea7565, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b5cc918, org.springframework.security.web.context.SecurityContextHolderFilter@78b7f805, org.springframework.security.web.header.HeaderWriterFilter@20801cbb, org.springframework.web.filter.CorsFilter@62b3a2f6, org.springframework.security.web.csrf.CsrfFilter@cde8c6c, org.springframework.security.web.authentication.logout.LogoutFilter@1376883, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77cb452c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e546734, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@202898d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5809fa26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23468512, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@317890ea, org.springframework.security.web.access.ExceptionTranslationFilter@193bb809, org.springframework.security.web.access.intercept.AuthorizationFilter@5382184b]
+2024-06-18 18:44:12 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-18 18:44:12 - Tomcat started on port 8080 (http) with context path '/'
+2024-06-18 18:44:12 - Started SecurityProjectApplication in 2.13 seconds (process running for 3.127)
+2024-06-18 18:44:20 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 18:44:20 - Initializing Servlet 'dispatcherServlet'
+2024-06-18 18:44:20 - Completed initialization in 0 ms
+2024-06-18 18:44:20 - Securing GET /
+2024-06-18 18:44:20 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-18 18:44:20 - Saved request http://localhost:8080/?continue to session
+2024-06-18 18:44:20 - Redirecting to http://localhost:8080/login
+2024-06-18 18:44:20 - Securing GET /login
+2024-06-18 18:44:26 - Securing POST /login
+2024-06-18 18:44:27 - Authenticated user
+2024-06-18 18:44:27 - Changed session id from 80C3A1B22399F7405CC56CC3EA853825
+2024-06-18 18:44:27 - Replaced CSRF Token
+2024-06-18 18:44:27 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@18504439]
+2024-06-18 18:44:27 - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]
+2024-06-18 18:44:27 - Login succeeded with for user : admin
+2024-06-18 18:44:27 - Securing GET /
+2024-06-18 18:44:27 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:27 - Secured GET /
+2024-06-18 18:44:27 - Securing GET /style.css
+2024-06-18 18:44:27 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:27 - Secured GET /style.css
+2024-06-18 18:44:33 - Securing GET /userManager
+2024-06-18 18:44:33 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:33 - Secured GET /userManager
+2024-06-18 18:44:33 - Securing GET /style.css
+2024-06-18 18:44:33 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:33 - Secured GET /style.css
+2024-06-18 18:44:34 - Securing GET /register
+2024-06-18 18:44:34 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:34 - Secured GET /register
+2024-06-18 18:44:34 - Securing GET /style.css
+2024-06-18 18:44:34 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:34 - Secured GET /style.css
+2024-06-18 18:44:36 - Securing GET /userManager
+2024-06-18 18:44:36 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:36 - Secured GET /userManager
+2024-06-18 18:44:36 - Securing GET /style.css
+2024-06-18 18:44:36 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:36 - Secured GET /style.css
+2024-06-18 18:44:38 - Securing GET /register
+2024-06-18 18:44:38 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:38 - Secured GET /register
+2024-06-18 18:44:38 - Securing GET /style.css
+2024-06-18 18:44:38 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=80C3A1B22399F7405CC56CC3EA853825], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-18 18:44:38 - Secured GET /style.css
