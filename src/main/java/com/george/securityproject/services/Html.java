@@ -1,4 +1,4 @@
-package com.george.securityproject;
+package com.george.securityproject.services;
 
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,6 @@
 package com.george.securityproject.controller;
 
-import com.george.securityproject.Html;
+import com.george.securityproject.services.Html;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
