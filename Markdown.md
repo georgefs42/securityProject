@@ -13,7 +13,7 @@ Projektet på [github](https://github.com/georgefs42/securityProject)
 
 **#Beskrivning av det du har bidragit med under grupparbetet.**
 
-Det mesta av arbetet gjordes tillsammans i gruppen och jag hade ansvar för klassen 'SecurityConfiguration', HomepageTest, log samt locgback.xml och pom.xml uppdating. Resten av projektet har vi arbetat tillsammans med.
+Det mesta av arbetet gjordes tillsammans i gruppen och jag hade ansvar för klassen 'SecurityConfiguration', HomepageTest, locgback.xml samt log.app och pom.xml uppdating. Resten av projektet har vi arbetat tillsammans med.
 
 ---
 **#1- Ge exempel på en metod i din grupps webbapplikation. Skriv metoden i ett kodblock.**
