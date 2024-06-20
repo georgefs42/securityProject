@@ -1,0 +1,580 @@
+2024-06-19 13:36:36 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 13:36:36 - Starting SecurityProjectApplication using Java 22.0.1 with PID 10832 (C:\Users\georg\IdeaProjects\securityProjectFINAL\target\classes started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 13:36:36 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 13:36:40 - Tomcat initialized with port 8080 (http)
+2024-06-19 13:36:40 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-19 13:36:40 - Starting service [Tomcat]
+2024-06-19 13:36:40 - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-19 13:36:41 - Initializing Spring embedded WebApplicationContext
+2024-06-19 13:36:41 - Root WebApplicationContext: initialization completed in 4510 ms
+2024-06-19 13:36:41 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 13:36:43 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42ea7565, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b5cc918, org.springframework.security.web.context.SecurityContextHolderFilter@78b7f805, org.springframework.security.web.header.HeaderWriterFilter@20801cbb, org.springframework.web.filter.CorsFilter@62b3a2f6, org.springframework.security.web.csrf.CsrfFilter@cde8c6c, org.springframework.security.web.authentication.logout.LogoutFilter@1376883, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77cb452c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e546734, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@202898d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5809fa26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23468512, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@317890ea, org.springframework.security.web.access.ExceptionTranslationFilter@193bb809, org.springframework.security.web.access.intercept.AuthorizationFilter@5382184b]
+2024-06-19 13:36:44 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-19 13:36:44 - Tomcat started on port 8080 (http) with context path '/'
+2024-06-19 13:36:44 - Started SecurityProjectApplication in 10.282 seconds (process running for 14.681)
+2024-06-19 13:39:33 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 13:39:33 - Initializing Servlet 'dispatcherServlet'
+2024-06-19 13:39:33 - Completed initialization in 3 ms
+2024-06-19 13:39:33 - Securing GET /
+2024-06-19 13:39:33 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 13:39:33 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [105] milliseconds.
+2024-06-19 13:39:33 - Saved request http://localhost:8080/?continue to session
+2024-06-19 13:39:33 - Redirecting to http://localhost:8080/login
+2024-06-19 13:39:33 - Securing GET /login
+2024-06-19 13:39:34 - Securing GET /favicon.ico
+2024-06-19 13:39:34 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 13:39:34 - Redirecting to http://localhost:8080/login
+2024-06-19 13:39:34 - Securing GET /login
+2024-06-19 13:39:38 - Securing POST /login
+2024-06-19 13:39:39 - Authenticated user
+2024-06-19 13:39:39 - Changed session id from 3D8C99A2777C1D40238C1A31C37B9E17
+2024-06-19 13:39:39 - Replaced CSRF Token
+2024-06-19 13:39:39 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@123b68ba]
+2024-06-19 13:39:39 - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]
+2024-06-19 13:39:39 - Login succeeded with for user : admin
+2024-06-19 13:39:39 - Securing GET /
+2024-06-19 13:39:39 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:39:39 - Secured GET /
+2024-06-19 13:39:39 - Securing GET /style.css
+2024-06-19 13:39:39 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:39:39 - Secured GET /style.css
+2024-06-19 13:39:39 - Securing GET /favicon.ico
+2024-06-19 13:39:39 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:39:39 - Secured GET /favicon.ico
+2024-06-19 13:39:39 - Securing GET /error
+2024-06-19 13:39:40 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:39:40 - Secured GET /error
+2024-06-19 13:39:48 - Securing GET /userManager
+2024-06-19 13:39:48 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:39:48 - Secured GET /userManager
+2024-06-19 13:39:49 - Securing GET /style.css
+2024-06-19 13:39:49 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:39:49 - Secured GET /style.css
+2024-06-19 13:39:50 - Securing GET /register
+2024-06-19 13:39:50 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:39:50 - Secured GET /register
+2024-06-19 13:39:50 - Securing GET /style.css
+2024-06-19 13:39:50 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:39:50 - Secured GET /style.css
+2024-06-19 13:41:26 - Securing POST /register
+2024-06-19 13:41:26 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:41:26 - Secured POST /register
+2024-06-19 13:41:27 - Securing GET /style.css
+2024-06-19 13:41:27 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:41:27 - Secured GET /style.css
+2024-06-19 13:41:35 - Securing GET /userManager
+2024-06-19 13:41:35 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:41:35 - Secured GET /userManager
+2024-06-19 13:41:35 - Securing GET /style.css
+2024-06-19 13:41:35 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:41:35 - Secured GET /style.css
+2024-06-19 13:41:39 - Securing POST /userManager/delete
+2024-06-19 13:41:39 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:41:39 - Secured POST /userManager/delete
+2024-06-19 13:41:39 - Securing GET /style.css
+2024-06-19 13:41:39 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:41:39 - Secured GET /style.css
+2024-06-19 13:41:41 - Securing GET /userManager
+2024-06-19 13:41:41 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:41:41 - Secured GET /userManager
+2024-06-19 13:41:41 - Securing GET /style.css
+2024-06-19 13:41:41 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:41:41 - Secured GET /style.css
+2024-06-19 13:43:15 - Securing GET /
+2024-06-19 13:43:15 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:43:15 - Secured GET /
+2024-06-19 13:43:15 - Securing GET /style.css
+2024-06-19 13:43:15 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=3D8C99A2777C1D40238C1A31C37B9E17], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 13:43:15 - Secured GET /style.css
+2024-06-19 14:06:25 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 14:06:25 - Starting SecurityProjectApplication using Java 22.0.1 with PID 6148 (C:\Users\georg\IdeaProjects\securityProjectFINAL\target\classes started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 14:06:25 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 14:06:28 - Tomcat initialized with port 8080 (http)
+2024-06-19 14:06:28 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-19 14:06:28 - Starting service [Tomcat]
+2024-06-19 14:06:28 - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-19 14:06:28 - Initializing Spring embedded WebApplicationContext
+2024-06-19 14:06:28 - Root WebApplicationContext: initialization completed in 2381 ms
+2024-06-19 14:06:29 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 14:06:29 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@422ad5e2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62a54948, org.springframework.security.web.context.SecurityContextHolderFilter@3caafa67, org.springframework.security.web.header.HeaderWriterFilter@69cd7630, org.springframework.web.filter.CorsFilter@6048e26a, org.springframework.security.web.csrf.CsrfFilter@151ab2b9, org.springframework.security.web.authentication.logout.LogoutFilter@3c770db4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@317890ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1859ffda, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@50b93353, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53747c4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f2276c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44286963, org.springframework.security.web.access.ExceptionTranslationFilter@64763e49, org.springframework.security.web.access.intercept.AuthorizationFilter@202898d7]
+2024-06-19 14:06:30 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-19 14:06:30 - Tomcat started on port 8080 (http) with context path '/'
+2024-06-19 14:06:30 - Started SecurityProjectApplication in 4.747 seconds (process running for 11.032)
+2024-06-19 14:06:36 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 14:06:36 - Initializing Servlet 'dispatcherServlet'
+2024-06-19 14:06:36 - Completed initialization in 2 ms
+2024-06-19 14:06:36 - Securing GET /
+2024-06-19 14:06:36 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 14:06:36 - Saved request http://localhost:8080/?continue to session
+2024-06-19 14:06:36 - Redirecting to http://localhost:8080/login
+2024-06-19 14:06:36 - Securing GET /login
+2024-06-19 14:09:50 - Securing POST /login
+2024-06-19 14:09:50 - Authenticated user
+2024-06-19 14:09:50 - Changed session id from F0497B5C84BE78B1C2F220CB34A8956F
+2024-06-19 14:09:50 - Replaced CSRF Token
+2024-06-19 14:09:50 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@3d358eb1]
+2024-06-19 14:09:50 - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]
+2024-06-19 14:09:50 - Login succeeded with for user : admin
+2024-06-19 14:09:50 - Securing GET /
+2024-06-19 14:09:50 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:09:50 - Secured GET /
+2024-06-19 14:09:51 - Securing GET /style.css
+2024-06-19 14:09:51 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:09:51 - Secured GET /style.css
+2024-06-19 14:09:57 - Securing GET /register
+2024-06-19 14:09:57 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:09:57 - Secured GET /register
+2024-06-19 14:09:57 - Securing GET /style.css
+2024-06-19 14:09:57 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:09:57 - Secured GET /style.css
+2024-06-19 14:10:07 - Securing POST /register
+2024-06-19 14:10:07 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:10:07 - Secured POST /register
+2024-06-19 14:10:07 - Securing GET /style.css
+2024-06-19 14:10:07 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:10:07 - Secured GET /style.css
+2024-06-19 14:10:11 - Securing GET /userManager
+2024-06-19 14:10:11 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:10:11 - Secured GET /userManager
+2024-06-19 14:10:11 - Securing GET /style.css
+2024-06-19 14:10:11 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:10:11 - Secured GET /style.css
+2024-06-19 14:11:03 - Securing POST /userManager/delete
+2024-06-19 14:11:03 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:03 - Secured POST /userManager/delete
+2024-06-19 14:11:03 - Securing GET /style.css
+2024-06-19 14:11:03 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:03 - Secured GET /style.css
+2024-06-19 14:11:11 - Securing GET /
+2024-06-19 14:11:11 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:11 - Secured GET /
+2024-06-19 14:11:11 - Securing GET /style.css
+2024-06-19 14:11:11 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:11 - Secured GET /style.css
+2024-06-19 14:11:15 - Securing GET /admin
+2024-06-19 14:11:15 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:15 - Secured GET /admin
+2024-06-19 14:11:15 - Securing GET /style.css
+2024-06-19 14:11:15 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:15 - Secured GET /style.css
+2024-06-19 14:11:29 - Securing GET /userManager
+2024-06-19 14:11:29 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:29 - Secured GET /userManager
+2024-06-19 14:11:29 - Securing GET /style.css
+2024-06-19 14:11:29 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:29 - Secured GET /style.css
+2024-06-19 14:11:57 - Securing GET /register
+2024-06-19 14:11:57 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:57 - Secured GET /register
+2024-06-19 14:11:57 - Securing GET /style.css
+2024-06-19 14:11:57 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:11:57 - Secured GET /style.css
+2024-06-19 14:12:11 - Securing POST /register
+2024-06-19 14:12:11 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:11 - Secured POST /register
+2024-06-19 14:12:11 - Securing GET /style.css
+2024-06-19 14:12:11 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:11 - Secured GET /style.css
+2024-06-19 14:12:13 - Securing GET /userManager
+2024-06-19 14:12:13 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:13 - Secured GET /userManager
+2024-06-19 14:12:13 - Securing GET /style.css
+2024-06-19 14:12:13 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:13 - Secured GET /style.css
+2024-06-19 14:12:20 - Securing POST /userManager/delete
+2024-06-19 14:12:20 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:20 - Secured POST /userManager/delete
+2024-06-19 14:12:20 - Securing GET /userManger?errorUsername=George
+2024-06-19 14:12:20 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:20 - Secured GET /userManger?errorUsername=George
+2024-06-19 14:12:21 - Securing GET /error?errorUsername=George
+2024-06-19 14:12:21 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:21 - Secured GET /error?errorUsername=George
+2024-06-19 14:12:23 - Securing GET /userManager
+2024-06-19 14:12:23 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:23 - Secured GET /userManager
+2024-06-19 14:12:23 - Securing GET /style.css
+2024-06-19 14:12:23 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:23 - Secured GET /style.css
+2024-06-19 14:12:28 - Securing POST /userManager/delete
+2024-06-19 14:12:28 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:28 - Secured POST /userManager/delete
+2024-06-19 14:12:28 - Securing GET /userManger?errorUsername=George
+2024-06-19 14:12:28 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:28 - Secured GET /userManger?errorUsername=George
+2024-06-19 14:12:28 - Securing GET /error?errorUsername=George
+2024-06-19 14:12:28 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:28 - Secured GET /error?errorUsername=George
+2024-06-19 14:12:32 - Securing GET /userManager
+2024-06-19 14:12:32 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:32 - Secured GET /userManager
+2024-06-19 14:12:32 - Securing GET /style.css
+2024-06-19 14:12:32 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F0497B5C84BE78B1C2F220CB34A8956F], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 14:12:32 - Secured GET /style.css
+2024-06-19 21:50:23 - Could not detect default configuration classes for test class [com.george.securityproject.controller.HomepageTest]: HomepageTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 21:50:23 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.HomepageTest
+2024-06-19 21:50:24 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 21:50:24 - Starting HomepageTest using Java 22.0.1 with PID 18556 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 21:50:24 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 21:50:26 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 21:50:26 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a90265a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a32191e, org.springframework.security.web.context.SecurityContextHolderFilter@721d8ab5, org.springframework.security.web.header.HeaderWriterFilter@5482bcac, org.springframework.web.filter.CorsFilter@66fbc5e7, org.springframework.security.web.csrf.CsrfFilter@83bb0f, org.springframework.security.web.authentication.logout.LogoutFilter@13bdf540, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62b57479, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@709f0202, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9accff0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1946384, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7412a438, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52559a69, org.springframework.security.web.access.ExceptionTranslationFilter@65629ac6, org.springframework.security.web.access.intercept.AuthorizationFilter@627ff1b8]
+2024-06-19 21:50:27 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 21:50:27 - Initializing Servlet ''
+2024-06-19 21:50:27 - Completed initialization in 2 ms
+2024-06-19 21:50:27 - Started HomepageTest in 3.96 seconds (process running for 6.952)
+2024-06-19 21:50:29 - Created HttpSession as SecurityContext is non-default
+2024-06-19 21:50:29 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@393ae7a0]
+2024-06-19 21:50:29 - Securing GET /
+2024-06-19 21:50:29 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]
+2024-06-19 21:50:29 - Secured GET /
+2024-06-19 21:50:30 - Securing GET /
+2024-06-19 21:50:30 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 21:50:30 - Saved request http://localhost/?continue to session
+2024-06-19 21:50:30 - Redirecting to http://localhost/login
+2024-06-19 21:57:08 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 21:57:08 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 21:57:09 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 21:57:09 - Starting RegistrationTest using Java 22.0.1 with PID 16292 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 21:57:09 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 21:57:11 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 21:57:11 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1fd7a37, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b202ff, org.springframework.security.web.context.SecurityContextHolderFilter@1150d471, org.springframework.security.web.header.HeaderWriterFilter@1e3ff233, org.springframework.web.filter.CorsFilter@58a84a12, org.springframework.security.web.csrf.CsrfFilter@4aa31ffc, org.springframework.security.web.authentication.logout.LogoutFilter@691500ab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52559a69, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@36ef1d65, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e700eba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@654e6a90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16a5c7e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6436e181, org.springframework.security.web.access.ExceptionTranslationFilter@6ac4c3f7, org.springframework.security.web.access.intercept.AuthorizationFilter@9accff0]
+2024-06-19 21:57:12 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 21:57:12 - Initializing Servlet ''
+2024-06-19 21:57:12 - Completed initialization in 5 ms
+2024-06-19 21:57:12 - Started RegistrationTest in 3.529 seconds (process running for 5.852)
+2024-06-19 21:57:13 - Securing POST /register
+2024-06-19 21:57:13 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:57:13 - Responding with 403 status code
+2024-06-19 21:57:13 - Securing POST /register
+2024-06-19 21:57:13 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:57:13 - Responding with 403 status code
+2024-06-19 21:57:13 - Created HttpSession as SecurityContext is non-default
+2024-06-19 21:57:13 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=testUser, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@315cf170]
+2024-06-19 21:57:13 - Securing POST /register
+2024-06-19 21:57:13 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:57:13 - Responding with 403 status code
+2024-06-19 21:57:27 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 21:57:27 - Starting SecurityProjectApplication using Java 22.0.1 with PID 16184 (C:\Users\georg\IdeaProjects\securityProjectFINAL\target\classes started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 21:57:27 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 21:57:28 - Tomcat initialized with port 8080 (http)
+2024-06-19 21:57:28 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-19 21:57:28 - Starting service [Tomcat]
+2024-06-19 21:57:28 - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-19 21:57:28 - Initializing Spring embedded WebApplicationContext
+2024-06-19 21:57:28 - Root WebApplicationContext: initialization completed in 1281 ms
+2024-06-19 21:57:29 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 21:57:29 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@456f7d9e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75d366c2, org.springframework.security.web.context.SecurityContextHolderFilter@1859ffda, org.springframework.security.web.header.HeaderWriterFilter@62b475e2, org.springframework.web.filter.CorsFilter@8f40022, org.springframework.security.web.csrf.CsrfFilter@193bb809, org.springframework.security.web.authentication.logout.LogoutFilter@2c26ba07, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c8f97a7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f736d00, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5232e3f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@131a7516, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@577536e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c8fe7a4, org.springframework.security.web.access.ExceptionTranslationFilter@f2276c9, org.springframework.security.web.access.intercept.AuthorizationFilter@44286963]
+2024-06-19 21:57:29 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-19 21:57:29 - Tomcat started on port 8080 (http) with context path '/'
+2024-06-19 21:57:29 - Started SecurityProjectApplication in 2.909 seconds (process running for 4.262)
+2024-06-19 21:57:34 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 21:57:34 - Initializing Servlet 'dispatcherServlet'
+2024-06-19 21:57:34 - Completed initialization in 1 ms
+2024-06-19 21:57:34 - Securing GET /
+2024-06-19 21:57:34 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 21:57:34 - Saved request http://localhost:8080/?continue to session
+2024-06-19 21:57:34 - Redirecting to http://localhost:8080/login
+2024-06-19 21:57:34 - Securing GET /login
+2024-06-19 21:57:35 - Securing GET /favicon.ico
+2024-06-19 21:57:35 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 21:57:35 - Redirecting to http://localhost:8080/login
+2024-06-19 21:57:35 - Securing GET /login
+2024-06-19 21:57:39 - Securing POST /login
+2024-06-19 21:57:39 - Authenticated user
+2024-06-19 21:57:39 - Changed session id from 1DB9674775D769674E582214ABB1B758
+2024-06-19 21:57:39 - Replaced CSRF Token
+2024-06-19 21:57:39 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@42ae6a76]
+2024-06-19 21:57:39 - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]
+2024-06-19 21:57:39 - Login succeeded with for user : admin
+2024-06-19 21:57:39 - Securing GET /
+2024-06-19 21:57:39 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 21:57:39 - Secured GET /
+2024-06-19 21:57:40 - Securing GET /style.css
+2024-06-19 21:57:40 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 21:57:40 - Secured GET /style.css
+2024-06-19 21:57:40 - Securing GET /favicon.ico
+2024-06-19 21:57:40 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 21:57:40 - Secured GET /favicon.ico
+2024-06-19 21:57:40 - Securing GET /error
+2024-06-19 21:57:40 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 21:57:40 - Secured GET /error
+2024-06-19 21:57:43 - Securing GET /register
+2024-06-19 21:57:43 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 21:57:43 - Secured GET /register
+2024-06-19 21:57:43 - Securing GET /style.css
+2024-06-19 21:57:43 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 21:57:43 - Secured GET /style.css
+2024-06-19 21:57:52 - Securing POST /register
+2024-06-19 21:57:52 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 21:57:52 - Secured POST /register
+2024-06-19 21:57:52 - Securing GET /style.css
+2024-06-19 21:57:52 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=1DB9674775D769674E582214ABB1B758], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 21:57:52 - Secured GET /style.css
+2024-06-19 21:58:01 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 21:58:01 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 21:58:02 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 21:58:02 - Starting RegistrationTest using Java 22.0.1 with PID 5340 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 21:58:02 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 21:58:04 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 21:58:04 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ea04cab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@134f8ef6, org.springframework.security.web.context.SecurityContextHolderFilter@10244722, org.springframework.security.web.header.HeaderWriterFilter@65629ac6, org.springframework.web.filter.CorsFilter@5a90265a, org.springframework.security.web.csrf.CsrfFilter@2accaec2, org.springframework.security.web.authentication.logout.LogoutFilter@c02670f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5cff6b74, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70029d2d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6a32191e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@721d8ab5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1946384, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66fbc5e7, org.springframework.security.web.access.ExceptionTranslationFilter@4c19d42e, org.springframework.security.web.access.intercept.AuthorizationFilter@4041739c]
+2024-06-19 21:58:04 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 21:58:04 - Initializing Servlet ''
+2024-06-19 21:58:04 - Completed initialization in 2 ms
+2024-06-19 21:58:05 - Started RegistrationTest in 3.086 seconds (process running for 5.563)
+2024-06-19 21:58:06 - Securing POST /register
+2024-06-19 21:58:06 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:58:06 - Responding with 403 status code
+2024-06-19 21:58:06 - Securing POST /register
+2024-06-19 21:58:06 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:58:06 - Responding with 403 status code
+2024-06-19 21:58:06 - Created HttpSession as SecurityContext is non-default
+2024-06-19 21:58:06 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=testUser, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@248d3a]
+2024-06-19 21:58:06 - Securing POST /register
+2024-06-19 21:58:06 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:58:06 - Responding with 403 status code
+2024-06-19 21:58:41 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 21:58:42 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 21:58:42 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 21:58:42 - Starting RegistrationTest using Java 22.0.1 with PID 15092 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 21:58:42 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 21:58:44 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 21:58:44 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ea04cab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@134f8ef6, org.springframework.security.web.context.SecurityContextHolderFilter@10244722, org.springframework.security.web.header.HeaderWriterFilter@65629ac6, org.springframework.web.filter.CorsFilter@5a90265a, org.springframework.security.web.csrf.CsrfFilter@2accaec2, org.springframework.security.web.authentication.logout.LogoutFilter@c02670f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5cff6b74, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70029d2d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6a32191e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@721d8ab5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1946384, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66fbc5e7, org.springframework.security.web.access.ExceptionTranslationFilter@4c19d42e, org.springframework.security.web.access.intercept.AuthorizationFilter@4041739c]
+2024-06-19 21:58:45 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 21:58:45 - Initializing Servlet ''
+2024-06-19 21:58:45 - Completed initialization in 4 ms
+2024-06-19 21:58:45 - Started RegistrationTest in 3.24 seconds (process running for 5.698)
+2024-06-19 21:58:46 - Securing POST /register
+2024-06-19 21:58:46 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:58:46 - Responding with 403 status code
+2024-06-19 21:58:46 - Securing POST /register
+2024-06-19 21:58:46 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:58:46 - Responding with 403 status code
+2024-06-19 21:58:46 - Created HttpSession as SecurityContext is non-default
+2024-06-19 21:58:46 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=testUser, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@248d3a]
+2024-06-19 21:58:46 - Securing POST /register
+2024-06-19 21:58:46 - Invalid CSRF token found for http://localhost/register
+2024-06-19 21:58:46 - Responding with 403 status code
+2024-06-19 22:00:08 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:00:08 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 22:00:09 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:00:09 - Starting RegistrationTest using Java 22.0.1 with PID 2468 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:00:09 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:00:11 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:00:11 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ea04cab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@134f8ef6, org.springframework.security.web.context.SecurityContextHolderFilter@10244722, org.springframework.security.web.header.HeaderWriterFilter@65629ac6, org.springframework.web.filter.CorsFilter@5a90265a, org.springframework.security.web.csrf.CsrfFilter@2accaec2, org.springframework.security.web.authentication.logout.LogoutFilter@c02670f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5cff6b74, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70029d2d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6a32191e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@721d8ab5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1946384, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66fbc5e7, org.springframework.security.web.access.ExceptionTranslationFilter@4c19d42e, org.springframework.security.web.access.intercept.AuthorizationFilter@4041739c]
+2024-06-19 22:00:12 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:00:12 - Initializing Servlet ''
+2024-06-19 22:00:12 - Completed initialization in 0 ms
+2024-06-19 22:00:12 - Started RegistrationTest in 3.243 seconds (process running for 5.705)
+2024-06-19 22:00:13 - Securing POST /register
+2024-06-19 22:00:13 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:00:13 - Responding with 403 status code
+2024-06-19 22:00:13 - Securing POST /register
+2024-06-19 22:00:13 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:00:13 - Responding with 403 status code
+2024-06-19 22:00:13 - Created HttpSession as SecurityContext is non-default
+2024-06-19 22:00:13 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=testUser, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@248d3a]
+2024-06-19 22:00:13 - Securing POST /register
+2024-06-19 22:00:13 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:00:13 - Responding with 403 status code
+2024-06-19 22:02:19 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:02:19 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 22:02:19 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:02:20 - Starting RegistrationTest using Java 22.0.1 with PID 9264 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:02:20 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:02:21 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:02:22 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ea04cab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@134f8ef6, org.springframework.security.web.context.SecurityContextHolderFilter@10244722, org.springframework.security.web.header.HeaderWriterFilter@65629ac6, org.springframework.web.filter.CorsFilter@5a90265a, org.springframework.security.web.csrf.CsrfFilter@2accaec2, org.springframework.security.web.authentication.logout.LogoutFilter@c02670f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5cff6b74, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70029d2d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6a32191e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@721d8ab5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1946384, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66fbc5e7, org.springframework.security.web.access.ExceptionTranslationFilter@4c19d42e, org.springframework.security.web.access.intercept.AuthorizationFilter@4041739c]
+2024-06-19 22:02:22 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:02:22 - Initializing Servlet ''
+2024-06-19 22:02:22 - Completed initialization in 2 ms
+2024-06-19 22:02:22 - Started RegistrationTest in 3.083 seconds (process running for 5.437)
+2024-06-19 22:02:23 - Securing POST /register
+2024-06-19 22:02:23 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 22:02:23 - Redirecting to http://localhost/login
+2024-06-19 22:02:23 - Securing POST /register
+2024-06-19 22:02:23 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 22:02:23 - Redirecting to http://localhost/login
+2024-06-19 22:07:12 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:07:12 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 22:07:13 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:07:13 - Starting RegistrationTest using Java 22.0.1 with PID 17312 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:07:13 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:07:15 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:07:15 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1fd7a37, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b202ff, org.springframework.security.web.context.SecurityContextHolderFilter@1150d471, org.springframework.security.web.header.HeaderWriterFilter@1e3ff233, org.springframework.web.filter.CorsFilter@58a84a12, org.springframework.security.web.csrf.CsrfFilter@4aa31ffc, org.springframework.security.web.authentication.logout.LogoutFilter@691500ab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52559a69, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@36ef1d65, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e700eba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@654e6a90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16a5c7e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6436e181, org.springframework.security.web.access.ExceptionTranslationFilter@6ac4c3f7, org.springframework.security.web.access.intercept.AuthorizationFilter@9accff0]
+2024-06-19 22:07:16 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:07:16 - Initializing Servlet ''
+2024-06-19 22:07:16 - Completed initialization in 0 ms
+2024-06-19 22:07:16 - Started RegistrationTest in 3.251 seconds (process running for 5.435)
+2024-06-19 22:07:17 - Securing POST /register
+2024-06-19 22:07:17 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:07:17 - Responding with 403 status code
+2024-06-19 22:07:17 - Securing POST /register
+2024-06-19 22:07:17 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:07:17 - Responding with 403 status code
+2024-06-19 22:07:17 - Created HttpSession as SecurityContext is non-default
+2024-06-19 22:07:17 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=testUser, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@315cf170]
+2024-06-19 22:07:17 - Securing POST /register
+2024-06-19 22:07:17 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:07:17 - Responding with 403 status code
+2024-06-19 22:12:48 - Could not detect default configuration classes for test class [com.george.securityproject.controller.UserManagementTest]: UserManagementTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:12:48 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.UserManagementTest
+2024-06-19 22:12:48 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:12:49 - Starting UserManagementTest using Java 22.0.1 with PID 2424 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:12:49 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:12:50 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:12:51 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c748a15, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19fd43da, org.springframework.security.web.context.SecurityContextHolderFilter@e29f4f6, org.springframework.security.web.header.HeaderWriterFilter@15fb4566, org.springframework.web.filter.CorsFilter@115dcaea, org.springframework.security.web.csrf.CsrfFilter@5b202ff, org.springframework.security.web.authentication.logout.LogoutFilter@5c53f292, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@545b5ed0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@684e8c9d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@cfd1075, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a538ed8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39dec536, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45117dd, org.springframework.security.web.access.ExceptionTranslationFilter@6a15b73, org.springframework.security.web.access.intercept.AuthorizationFilter@4fc165f6]
+2024-06-19 22:12:51 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:12:51 - Initializing Servlet ''
+2024-06-19 22:12:51 - Completed initialization in 9 ms
+2024-06-19 22:12:51 - Started UserManagementTest in 2.984 seconds (process running for 5.166)
+2024-06-19 22:12:53 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:12:53 - Initializing Servlet ''
+2024-06-19 22:12:53 - Completed initialization in 0 ms
+2024-06-19 22:12:53 - No mapping for POST /userManger/delete
+2024-06-19 22:12:53 - No endpoint POST /userManger/delete.
+2024-06-19 22:12:53 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:12:53 - Initializing Servlet ''
+2024-06-19 22:12:53 - Completed initialization in 0 ms
+2024-06-19 22:12:53 - No mapping for POST /userManger/delete
+2024-06-19 22:12:53 - No endpoint POST /userManger/delete.
+2024-06-19 22:13:57 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:13:57 - Starting SecurityProjectApplication using Java 22.0.1 with PID 19900 (C:\Users\georg\IdeaProjects\securityProjectFINAL\target\classes started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:13:57 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:13:58 - Tomcat initialized with port 8080 (http)
+2024-06-19 22:13:58 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-19 22:13:58 - Starting service [Tomcat]
+2024-06-19 22:13:58 - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-19 22:13:58 - Initializing Spring embedded WebApplicationContext
+2024-06-19 22:13:58 - Root WebApplicationContext: initialization completed in 1457 ms
+2024-06-19 22:13:59 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:13:59 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@523a7801, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@718fd7c1, org.springframework.security.web.context.SecurityContextHolderFilter@648c5fb3, org.springframework.security.web.header.HeaderWriterFilter@3592c1c4, org.springframework.web.filter.CorsFilter@4bc6da03, org.springframework.security.web.csrf.CsrfFilter@6b4125ed, org.springframework.security.web.authentication.logout.LogoutFilter@3caafa67, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52d3fafd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d5a1588, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4f59a516, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7126e26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13ed066e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e22368c, org.springframework.security.web.access.ExceptionTranslationFilter@cde8c6c, org.springframework.security.web.access.intercept.AuthorizationFilter@12219f6a]
+2024-06-19 22:13:59 - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-19 22:13:59 - Tomcat started on port 8080 (http) with context path '/'
+2024-06-19 22:13:59 - Started SecurityProjectApplication in 3.001 seconds (process running for 4.39)
+2024-06-19 22:14:05 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 22:14:05 - Initializing Servlet 'dispatcherServlet'
+2024-06-19 22:14:05 - Completed initialization in 2 ms
+2024-06-19 22:14:05 - Securing GET /
+2024-06-19 22:14:05 - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-19 22:14:05 - Saved request http://localhost:8080/?continue to session
+2024-06-19 22:14:05 - Redirecting to http://localhost:8080/login
+2024-06-19 22:14:05 - Securing GET /login
+2024-06-19 22:14:10 - Securing POST /login
+2024-06-19 22:14:10 - Authenticated user
+2024-06-19 22:14:10 - Changed session id from F873263A434954E1A103B00C18F89A30
+2024-06-19 22:14:10 - Replaced CSRF Token
+2024-06-19 22:14:10 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F873263A434954E1A103B00C18F89A30], Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@6f6e66f1]
+2024-06-19 22:14:10 - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F873263A434954E1A103B00C18F89A30], Granted Authorities=[ROLE_ADMIN]]
+2024-06-19 22:14:10 - Login succeeded with for user : admin
+2024-06-19 22:14:10 - Securing GET /
+2024-06-19 22:14:10 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F873263A434954E1A103B00C18F89A30], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 22:14:10 - Secured GET /
+2024-06-19 22:14:11 - Securing GET /style.css
+2024-06-19 22:14:11 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F873263A434954E1A103B00C18F89A30], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 22:14:11 - Secured GET /style.css
+2024-06-19 22:14:14 - Securing GET /register
+2024-06-19 22:14:14 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F873263A434954E1A103B00C18F89A30], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 22:14:14 - Secured GET /register
+2024-06-19 22:14:14 - Securing GET /style.css
+2024-06-19 22:14:14 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F873263A434954E1A103B00C18F89A30], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 22:14:14 - Secured GET /style.css
+2024-06-19 22:14:25 - Securing POST /register
+2024-06-19 22:14:25 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F873263A434954E1A103B00C18F89A30], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 22:14:25 - Secured POST /register
+2024-06-19 22:14:26 - Securing GET /style.css
+2024-06-19 22:14:26 - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=F873263A434954E1A103B00C18F89A30], Granted Authorities=[ROLE_ADMIN]]]
+2024-06-19 22:14:26 - Secured GET /style.css
+2024-06-19 22:14:38 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:14:38 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 22:14:39 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:14:39 - Starting RegistrationTest using Java 22.0.1 with PID 10876 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:14:39 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:14:41 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:14:41 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1039bfc4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f85217c, org.springframework.security.web.context.SecurityContextHolderFilter@3c952a33, org.springframework.security.web.header.HeaderWriterFilter@6ac4c3f7, org.springframework.web.filter.CorsFilter@1fd7a37, org.springframework.security.web.csrf.CsrfFilter@6393bf8b, org.springframework.security.web.authentication.logout.LogoutFilter@4ac8768e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66fbc5e7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2a2dc0a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b202ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1150d471, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@654e6a90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58a84a12, org.springframework.security.web.access.ExceptionTranslationFilter@33bb3f86, org.springframework.security.web.access.intercept.AuthorizationFilter@6a32191e]
+2024-06-19 22:14:42 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:14:42 - Initializing Servlet ''
+2024-06-19 22:14:42 - Completed initialization in 0 ms
+2024-06-19 22:14:42 - Started RegistrationTest in 3.54 seconds (process running for 6.234)
+2024-06-19 22:14:43 - Securing POST /register
+2024-06-19 22:14:43 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:14:43 - Responding with 403 status code
+2024-06-19 22:14:43 - Securing POST /register
+2024-06-19 22:14:43 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:14:43 - Responding with 403 status code
+2024-06-19 22:14:43 - Created HttpSession as SecurityContext is non-default
+2024-06-19 22:14:43 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=testUser, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@1be77a76]
+2024-06-19 22:14:43 - Securing POST /register
+2024-06-19 22:14:43 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:14:43 - Responding with 403 status code
+2024-06-19 22:15:04 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:15:05 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 22:15:05 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:15:05 - Starting RegistrationTest using Java 22.0.1 with PID 14732 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:15:05 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:15:07 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:15:07 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b649efa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65ef48f2, org.springframework.security.web.context.SecurityContextHolderFilter@8aeab9e, org.springframework.security.web.header.HeaderWriterFilter@14168e1, org.springframework.web.filter.CorsFilter@36068727, org.springframework.security.web.csrf.CsrfFilter@6ddee60f, org.springframework.security.web.authentication.logout.LogoutFilter@627ff1b8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58a84a12, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c02670f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72543547, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a00b15d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4be0a27d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d88e6b9, org.springframework.security.web.access.ExceptionTranslationFilter@709f0202, org.springframework.security.web.access.intercept.AuthorizationFilter@5b202ff]
+2024-06-19 22:15:08 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:15:08 - Initializing Servlet ''
+2024-06-19 22:15:08 - Completed initialization in 0 ms
+2024-06-19 22:15:08 - Started RegistrationTest in 3.084 seconds (process running for 5.262)
+2024-06-19 22:15:09 - Securing POST /register
+2024-06-19 22:15:09 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:15:09 - Responding with 403 status code
+2024-06-19 22:15:48 - Could not detect default configuration classes for test class [com.george.securityproject.controller.RegistrationTest]: RegistrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:15:48 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.RegistrationTest
+2024-06-19 22:15:49 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:15:49 - Starting RegistrationTest using Java 22.0.1 with PID 18056 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:15:49 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:15:51 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:15:51 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b202ff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58a84a12, org.springframework.security.web.context.SecurityContextHolderFilter@709f0202, org.springframework.security.web.header.HeaderWriterFilter@3c952a33, org.springframework.web.filter.CorsFilter@e700eba, org.springframework.security.web.csrf.CsrfFilter@7945b206, org.springframework.security.web.authentication.logout.LogoutFilter@3db432c2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@285583d4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4be0a27d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6436e181, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14168e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e225820, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7186b202, org.springframework.security.web.access.ExceptionTranslationFilter@7412a438, org.springframework.security.web.access.intercept.AuthorizationFilter@52559a69]
+2024-06-19 22:15:52 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:15:52 - Initializing Servlet ''
+2024-06-19 22:15:52 - Completed initialization in 0 ms
+2024-06-19 22:15:52 - Started RegistrationTest in 3.066 seconds (process running for 5.51)
+2024-06-19 22:15:53 - Securing POST /register
+2024-06-19 22:15:53 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:15:53 - Responding with 403 status code
+2024-06-19 22:15:53 - Securing POST /register
+2024-06-19 22:15:53 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:15:53 - Responding with 403 status code
+2024-06-19 22:15:53 - Created HttpSession as SecurityContext is non-default
+2024-06-19 22:15:53 - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=testUser, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@abc7005]
+2024-06-19 22:15:53 - Securing POST /register
+2024-06-19 22:15:53 - Invalid CSRF token found for http://localhost/register
+2024-06-19 22:15:53 - Responding with 403 status code
+2024-06-19 22:16:03 - Could not detect default configuration classes for test class [com.george.securityproject.controller.UserManagementTest]: UserManagementTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:16:04 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.UserManagementTest
+2024-06-19 22:16:04 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:16:05 - Starting UserManagementTest using Java 22.0.1 with PID 13216 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:16:05 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:16:07 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:16:07 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@667dcaad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22d7fd41, org.springframework.security.web.context.SecurityContextHolderFilter@25ffd826, org.springframework.security.web.header.HeaderWriterFilter@6a15b73, org.springframework.web.filter.CorsFilter@2c748a15, org.springframework.security.web.csrf.CsrfFilter@7f85217c, org.springframework.security.web.authentication.logout.LogoutFilter@6fa2448b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@996a546, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3cdc7b09, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@19fd43da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e29f4f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a538ed8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@115dcaea, org.springframework.security.web.access.ExceptionTranslationFilter@77f4c040, org.springframework.security.web.access.intercept.AuthorizationFilter@750f64fe]
+2024-06-19 22:16:08 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:16:08 - Initializing Servlet ''
+2024-06-19 22:16:08 - Completed initialization in 3 ms
+2024-06-19 22:16:08 - Started UserManagementTest in 3.695 seconds (process running for 6.24)
+2024-06-19 22:16:10 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:16:10 - Initializing Servlet ''
+2024-06-19 22:16:10 - Completed initialization in 0 ms
+2024-06-19 22:16:10 - Could not detect default configuration classes for test class [com.george.securityproject.controller.UserManagementTest]: UserManagementTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-19 22:16:10 - No mapping for POST /userManger/delete
+2024-06-19 22:16:10 - No endpoint POST /userManger/delete.
+2024-06-19 22:16:11 - Found @SpringBootConfiguration com.george.securityproject.SecurityProjectApplication for test class com.george.securityproject.controller.UserManagementTest
+2024-06-19 22:16:11 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-19 22:16:12 - Starting UserManagementTest using Java 22.0.1 with PID 14612 (started by georg in C:\Users\georg\IdeaProjects\securityProjectFINAL)
+2024-06-19 22:16:12 - No active profile set, falling back to 1 default profile: "default"
+2024-06-19 22:16:13 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-19 22:16:14 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@19fd43da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@115dcaea, org.springframework.security.web.context.SecurityContextHolderFilter@41b64020, org.springframework.security.web.header.HeaderWriterFilter@25ffd826, org.springframework.web.filter.CorsFilter@cfd1075, org.springframework.security.web.csrf.CsrfFilter@58a84a12, org.springframework.security.web.authentication.logout.LogoutFilter@46fb0c33, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a7df831, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ecc02bb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@45117dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78910096, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a1a256d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7741771e, org.springframework.security.web.access.ExceptionTranslationFilter@44dc7b7d, org.springframework.security.web.access.intercept.AuthorizationFilter@545b5ed0]
+2024-06-19 22:16:14 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:16:14 - Initializing Servlet ''
+2024-06-19 22:16:14 - Completed initialization in 11 ms
+2024-06-19 22:16:14 - Started UserManagementTest in 3.499 seconds (process running for 6.208)
+2024-06-19 22:16:16 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:16:16 - Initializing Servlet ''
+2024-06-19 22:16:16 - Completed initialization in 0 ms
+2024-06-19 22:16:16 - No mapping for POST /userManger/delete
+2024-06-19 22:16:16 - No endpoint POST /userManger/delete.
+2024-06-19 22:16:16 - Initializing Spring TestDispatcherServlet ''
+2024-06-19 22:16:16 - Initializing Servlet ''
+2024-06-19 22:16:16 - Completed initialization in 0 ms
+2024-06-19 22:16:16 - No mapping for POST /userManger/delete
+2024-06-19 22:16:16 - No endpoint POST /userManger/delete.
